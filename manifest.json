@@ -1,0 +1,17 @@
+{
+    "name": "Youtube Forward button",
+    "version": "1.0.0",
+    "description": "Forward your video x4 with CTRL key",
+    "manifest_version": 3,
+    "author": "Yuizz",
+    "action":{
+        "default_popup": "index.html",
+        "default_title": "Forward youtube video"
+    },
+    "content_scripts": [
+   {
+     "matches": ["https://www.youtube.com/*"],
+     "js": ["ytforward.js"]
+   }
+ ]
+}
